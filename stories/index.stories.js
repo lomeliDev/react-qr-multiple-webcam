@@ -36,6 +36,7 @@ class Wrapper extends Component {
             />
           </div>
         )}
+        hola
         {this.state.on && (
           <Reader
             onError={action("Error")}
@@ -48,6 +49,7 @@ class Wrapper extends Component {
             maxImageSize={1000}
             delay={this.state.delay}
             className="reader-container"
+            webcamID="a4c16f32e7b3f0b672a1e5cc9859d179469d4a9dff13217de791cc76c05f6b04"
           />
         )}
         {legacyMode && (
