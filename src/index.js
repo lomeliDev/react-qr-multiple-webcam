@@ -155,8 +155,6 @@ module.exports = class Reader extends Component {
 
     const vConstraintsPromise = getDeviceId(facingMode).then(deviceId => Object.assign({}, { deviceId: props.webcamID }, props.constraints))
 
-    console.log(vConstraintsPromise.then(e => console.log(e)));
-
     vConstraintsPromise
       .then(video => navigator.mediaDevices.getUserMedia({ video }))
       .then(this.handleVideo)
