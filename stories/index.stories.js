@@ -46,8 +46,9 @@ class Wrapper extends Component {
             ref="reader"
             facingMode={this.state.facingMode}
             legacyMode={legacyMode}
-            maxImageSize={1000}
+            maxImageSize={5000}
             delay={this.state.delay}
+            style={{ width: "60%" }}
             className="reader-container"
             webcamID="a4c16f32e7b3f0b672a1e5cc9859d179469d4a9dff13217de791cc76c05f6b04"
           />
